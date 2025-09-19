@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yawo Nyonato - Subscribe - JavaScript Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Welcome to my World</h1>
+  <nav class="nav-bar">
+    <a href="#" id="homeLink">Home</a>
+    <a href="#" id="articlesLink">Articles</a>
+    <a href="#" id="aboutLink">About</a>
+    <a href="#" id="contactLink">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section id="interactiveFeatures">
+    <h2>Features</h2>
+    <button id="toggleThemeBtn">Toggle Dark/Light Mode</button>
+    <button id="incrementCounterBtn">Increment Counter</button>
+    <p>Counter: <span id="counterValue">0</span></p>
+  </section>
+
+  <section id="formSection">
+    <h2>Subscription Form</h2>
+    <form id="signupForm" novalidate>
+      <label for="nameInput">Name:</label>
+      <input type="text" id="nameInput" name="name" required />
+      <span class="error" id="nameError"></span>
+
+      <label for="emailInput">Email:</label>
+      <input type="email" id="emailInput" name="email" required />
+      <span class="error" id="emailError"></span>
+
+      <label for="passwordInput">Password:</label>
+      <input type="password" id="passwordInput" name="password" required minlength="6" />
+      <span class="error" id="passwordError"></span>
+
+      <button type="submit">Subscribe</button>
+    </form>
+    <p id="formSuccessMessage"></p>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
